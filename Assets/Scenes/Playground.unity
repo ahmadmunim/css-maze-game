@@ -38,8 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 2114283754330233425}
-
-  m_IndirectSpecularColor: {r: 0.02915215, g: 0.064445496, b: 0.12695035, a: 1}
+  m_IndirectSpecularColor: {r: 0.029152213, g: 0.064445764, b: 0.12695098, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -173,7 +172,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &542508511
 GameObject:
@@ -750,11 +749,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea98d47774c03ef4ea0cecfaa33109fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnRange: 10
-  maxEnemies: 10
-  spawnPoint: {fileID: 0}
-  spawnInterval: 1
   Dummy: {fileID: 1978169363}
+  maxEnemies: 20
+  spawnInterval: 0.1
+  mazeGenerator: {fileID: 414477270}
 --- !u!4 &1833052652
 Transform:
   m_ObjectHideFlags: 0
@@ -785,7 +783,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1978169363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2eb140519baebf42922e3b23b3a35ea, type: 3}
+  m_Script: {fileID: 11500000, guid: ecbf224a72c1d114b88f32b6eb21c35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -948,7 +946,7 @@ PrefabInstance:
     - target: {fileID: 3966708725887190838, guid: ef692d625a130534ab152b65fe91a77b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3966708725887190838, guid: ef692d625a130534ab152b65fe91a77b,
         type: 3}
@@ -1145,7 +1143,7 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6875
+      value: 1.3275
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -1526,7 +1524,7 @@ PrefabInstance:
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6875
+      value: 1.3275
       objectReference: {fileID: 0}
     - target: {fileID: 8762286023885395322, guid: 9c489a8547f4d9e4387da15a4ff82c81,
         type: 3}
