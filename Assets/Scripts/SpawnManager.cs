@@ -20,6 +20,7 @@ public class SpawnManager : MonoBehaviour
     public Transform spawnPoint;
     public float spawnInterval = 2f;
     public GameObject Dummy;
+    public List<GameObject> enemies;
 
     void Start()
     {
@@ -34,8 +35,11 @@ public class SpawnManager : MonoBehaviour
             if (GameObject.FindGameObjectsWithTag("Enemy").Length < maxEnemies)
             {
                 Vector3 spawnPosition = Random.insideUnitSphere * spawnRange;
+                spawnPosition.x += 10;
+                spawnPosition.z += 10;
                 spawnPosition.y = 0f; // Set the y position to 0 or the desired height above the ground
-                Instantiate(Dummy, spawnPosition, Quaternion.identity);
+                GameObject enemyInstance = Instantiate(Dummy, spawnPosition, Quaternion.identity);
+                enemies.Add(enemyInstance);
             }
 
             yield return new WaitForSeconds(2f); // Adjust the spawn interval as needed

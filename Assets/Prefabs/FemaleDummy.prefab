@@ -2098,6 +2098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7036902654744072718}
   - component: {fileID: 7036902654753176980}
+  - component: {fileID: -6123602702545066375}
   m_Layer: 0
   m_Name: FemaleDummy
   m_TagString: Untagged
@@ -2143,3 +2144,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &-6123602702545066375
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7036902654743777262}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
